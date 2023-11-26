@@ -9,18 +9,20 @@
     temporary
   >
     <v-card class="mx-auto" width="300">
+      <v-responsive> 
       <v-text-field
         v-model="searchField"
         :loading="loading"
         density="compact"
         variant="solo"
         label="search"
-        append-inner-icon="mdi-magnify"
+        append-inner-icon="search"
         single-line
         hide-details
-        @click:append-inner="getsearchdata()"
+        @input="searchField()"
         
       ></v-text-field>
+    </v-responsive>
     </v-card>
     <v-list v-for="item in itemgroup" :key="item.title" color="blue">
       <v-list-item :title="item.title"></v-list-item>
@@ -231,9 +233,9 @@ export default {
     drawer: false,
     group: null,
     itemgroup: [
-      { title: "members", value: 'ahmed' },
-      { title: "leads", value: 'tarek' },
-      { title: "staff members", value: 'mahmoud' },
+      { title: "members", value: 'members' },
+      { title: "leads", value : 'leads' },
+      { title: "staff members",  value : 'staffmember' },
     ],
   }),
   computed: {
@@ -269,19 +271,21 @@ export default {
         }
       });
     },
-    getsearchdata(){
+    getsearchdata(name){
+      console.log("40" ,name)
    this.axios({
-    url:`user/search?name=ali`,
+    url:`user/search?name=${name}`,
     method:"Get"
   
    }).then( (res)=>{
-  
+  console.log(name , "50")
   if(res.status===200){
     // console.log(  'search15', this.$store.commit("auth/search")) 
     console.log(res.data)
-      this.members= res.data.member
+      this.members= res.data.members
       this.staffmember=res.data.staff
       this.leads=res.data.leads
+    
   }
    
    })
@@ -306,11 +310,22 @@ export default {
     group() {
       this.drawer = false;
     },
-    TextField(oldval,newVal){
-    this.searchField = newVal
+    searchField(oldval,newVal){
+    this.getsearchdata(oldval) 
+    console.log(newVal , '1')
 
-    }
-  },
+
+    },
+    members(oldval,newVal){
+      this.members =newVal
+    },
+    leads(oldval,newVal){
+      this.leads =newVal
+    },
+    staffmember(oldval,newVal){
+      this.staffmember =newVal
+    } 
+   },
   // watch: {
   //   railProp(newVal) {
   //     this.rail = newVal;
