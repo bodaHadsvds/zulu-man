@@ -1,0 +1,767 @@
+{
+  "global": {
+    "name": {
+      "this": "الاسم",
+      "placeholder": "أدخل الاسم",
+      "validation": "الاسم مطلوب."
+    },
+    "name_ar": {
+      "this": "الاسم باللغة العربية",
+      "placeholder": "أدخل الاسم باللغة العربية",
+      "validation": "الاسم باللغة العربية مطلوب."
+    },
+    "name_en": {
+      "this": "الاسم باللغة الإنجليزية",
+      "placeholder": "أدخل الاسم باللغة الإنجليزية",
+      "validation": "الاسم باللغة الإنجليزية مطلوب."
+    },
+    "first_name": {
+      "this": "الاسم الأول",
+      "placeholder": "أدخل الاسم الأول",
+      "validation": "الاسم الأول مطلوب."
+    },
+    "last_name": {
+      "this": "الاسم الأخير",
+      "placeholder": "أدخل الاسم الأخير",
+      "validation": "الاسم الأخير مطلوب."
+    },
+    "email": {
+      "this": "البريد الإلكتروني",
+      "placeholder": "أدخل البريد الإلكتروني",
+      "validation": "البريد الإلكتروني مطلوب.",
+      "exist_validation": "البريد الإلكتروني موجود بالفعل.",
+      "exp_validation": "يجب أن يكون البريد الإلكتروني صالح."
+    },
+    "password": {
+      "this": "كلمة المرور",
+      "placeholder": "أدخل كلمة المرور",
+      "validation": "كلمة المرور مطلوبة."
+    },
+    "old_password": {
+      "this": "كلمة المرور القديمة",
+      "placeholder": "أدخل كلمة المرور القديمة",
+      "validation": "كلمة المرور القديمة مطلوبة.",
+      "incorrect": "كلمة المرور القديمة غير صحيحة"
+    },
+    "new_password": {
+      "this": "كلمة المرور الجديدة",
+      "placeholder": "أدخل كلمة مرور جديدة",
+      "validation": "كلمة المرور الجديدة مطلوبة."
+    },
+    "confirm_password": {
+      "this": "تأكيد كلمة المرور",
+      "placeholder": "أعد إدخال كلمة المرور الجديدة",
+      "validation": "من فضلك، قم بتأكيد كلمة المرور الجديدة.",
+      "match": "كلمة المرور الجديدة غير متطابقة."
+    },
+    "phone": {
+      "this": "رقم الهاتف",
+      "placeholder": "أدخل رقم الهاتف",
+      "validation": "رقم الهاتف مطلوب."
+    },
+    "additional_num": {
+      "this": "الرقم الإضافي",
+      "placeholder": "أدخل الرقم الإضافي",
+      "none": "لا يوجد رقم إضافي"
+    },
+    "id_num": {
+      "this": "رقم الهوية",
+      "placeholder": "أدخل رقم الهوية",
+      "validation": "رقم الهوية مطلوب.",
+      "exist_validation": "رقم الهوية موجود بالفعل."
+    },
+    "employee_id": {
+      "this": "رقم الموظف",
+      "placeholder": "أدخل رقم الموظف",
+      "validation": "رقم الموظف مطلوب.",
+      "exist_validation": "رقم الموظف موجود بالفعل."
+    },
+    "birthdate": {
+      "this": "تاريخ الميلاد",
+      "placeholder": "أدخل تاريخ الميلاد",
+      "validation": "تاريخ الميلاد مطلوب."
+    },
+    "gender": {
+      "this": "النوع",
+      "placeholder": "أدخل النوع",
+      "validation": "النوع مطلوب.",
+      "male": "ذكر",
+      "female": "أنثى"
+    },
+    "country": {
+      "this": "البلد",
+      "placeholder": "أدخل البلد",
+      "validation": "البلد مطلوب."
+    },
+    "city": {
+      "this": "المدينة",
+      "placeholder": "أدخل المدينة",
+      "validation": "المدينة مطلوبة."
+    },
+    "state": {
+      "this": "الولاية / المقاطعة",
+      "placeholder": "أدخل الولاية / المقاطعة"
+    },
+    "street": {
+      "this": "الشارع",
+      "placeholder": "أدخل الشارع",
+      "validation": "الشارع مطلوب."
+    },
+    "post_code": {
+      "this": "الرمز البريدي",
+      "placeholder": "أدخل الرمز البريدي"
+    },
+    "type": {
+      "this": "النوع",
+      "placeholder": "أدخل النوع",
+      "validation": "النوع مطلوب."
+    },
+    "item": {
+      "this": "العنصر",
+      "placeholder": "أدخل العنصر",
+      "validation": "العنصر مطلوب."
+    },
+    "price": {
+      "this": "السعر",
+      "placeholder": "أدخل السعر",
+      "validation": "السعر مطلوب."
+    },
+    "entrances": {
+      "this": "الدخول",
+      "placeholder": "أدخل الدخول",
+      "validation": "عدد الدخول مطلوب."
+    },
+    "sku": {
+      "this": "الرقم المرجعي",
+      "placeholder": "أدخل الرقم المرجعي",
+      "validation": "الرقم المرجعي مطلوب."
+    },
+    "qty": {
+      "this": "الكمية",
+      "placeholder": "أدخل الكمية",
+      "validation": "الكمية مطلوبة."
+    },
+    "date": {
+      "this": "التاريخ",
+      "placeholder": "أدخل التاريخ",
+      "validation": "التاريخ مطلوب."
+    },
+    "start": {
+      "this": "بداية",
+      "placeholder": "أدخل تاريخ البدء",
+      "validation": "تاريخ البدء مطلوب."
+    },
+    "end": {
+      "this": "نهاية",
+      "placeholder": "أدخل تاريخ الانتهاء",
+      "validation": "تاريخ الانتهاء مطلوب."
+    },
+    "day": {
+      "this": "اليوم",
+      "plural": "أيام",
+      "placeholder": "أدخل عدد الأيام",
+      "validation": "الأيام مطلوبة.",
+      "names": {
+        "Sat": { "abbr": "سبت", "name": "السبت" },
+        "Sun": { "abbr": "أحد", "name": "الأحد" },
+        "Mon": { "abbr": "اثنين", "name": "الاثنين" },
+        "Tue": { "abbr": "ثلاثاء", "name": "الثلاثاء" },
+        "Wed": { "abbr": "أربعاء", "name": "الأربعاء" },
+        "Thu": { "abbr": "خميس", "name": "الخميس" },
+        "Fri": { "abbr": "جمعة", "name": "الجمعة" }
+      }
+    },
+    "currency": {
+      "this": "العملة",
+      "placeholder": "أدخل العملة"
+    },
+    "description": {
+      "this": "الوصف",
+      "placeholder": "أدخل الوصف",
+      "validation": "الوصف مطلوب."
+    },
+    "purchase": {
+      "this": "الشراء",
+      "plural": "مشتريات",
+      "add": "إضافة مشترى جديد"
+    },
+    "session_punch_cards":{
+      "this": "بطافات الجلسات",
+      "add": "بطاقة جلسات جديدة"
+    },
+    "membership": {
+      "this": "العضوية",
+      "plural": "العضويات",
+      "add": "عضوية جديدة",
+      "edit": "تعديل خطة العضوية",
+      "types": "أنواع العضويات",
+      "plans": "خطط العضويات",
+      "time_period": "فترة العضوية",
+      "hold": {
+        "this": "تعليق العضوية",
+        "reason": {
+          "this": "سبب التعليق",
+          "items": {
+            "medical_reason": "سبب طبي",
+            "military_duty": "خدمة عسكرية",
+            "vacation": "إجازة",
+            "studies": "دراسات",
+            "other": "سبب آخر",
+            "pregnancy": "حمل",
+            "personal": "أسباب شخصية",
+            "grief": "حزن",
+            "marriage": "زواج",
+            "coronavirus": "كورونا"
+          }
+        },
+        "comment": {
+          "this": "التعليق",
+          "placeholder": "أدخل تعليق"
+        }
+      },
+      "cancel": {
+        "this": "cancel membership",
+        "reason": {
+          "this": "cancel reason",
+          "items": {
+            "moving": "Moving",
+            "medical": "Medical",
+            "another_gym": "Moved to another gym",
+            "didn't_like": "Didn't like",
+            "expensive": "Too Expensive",
+            "other": "Other",
+            "intense": "Too Intense",
+            "membership_change": "Membership Change",
+            "no_time": "No Time",
+            "didn't_wait": "Didn't wait for openning",
+            "internal_mistake": "Internal Mistake",
+            "freefit": "FreeFit",
+            "credit_declined": "Credit Transaction Declined",
+            "credit_canceled": "Cancelled Credit Card",
+            "family": "Family Reason",
+            "quaratine": "Quaratine",
+            "coronavirus": "Coronavirus",
+            "facilities": "Facilities",
+            "not_enought_time": "Not Enough Time",
+            "didn't_like_staff": "Didn't Like The Staff",
+            "pregnancy": "Pregnancy",
+            "traffic": "Traffic",
+            "competition": "Competition",
+            "location_change": "Location Change"
+          }
+        },
+        "comment": {
+          "this": "comment",
+          "placeholder": "enter comment"
+        }
+      },
+      "table": {
+        "purchase_date": "تاريخ الشراء",
+        "value": "القيمة",
+        "balance": "الرصيد",
+        "sessions_left": "الجلسات المتبقية"
+      },
+      "active": "العضويات النشطة",
+      "future": "العضويات المستقبلية",
+      "expiration_period": "فترة الانتهاء",
+      "time_per": {
+        "this": "الوقت لكل",
+        "placeholder": "أدخل مدة فترة العضوية",
+        "validation": "الوقت لفترة العضوية مطلوب",
+        "type": {
+          "this": "نوع الفترة",
+          "plural": "أنواع الفترات",
+          "validation": "نوع الفترة مطلوب",
+          "items": {
+            "days": "ايام",
+            "weeks": "أسابيع",
+            "months": "أشهر",
+            "years": "سنوات"
+          }
+        }
+      }
+    },
+    "product": {
+      "this": "المنتج",
+      "plural": "المنتجات",
+      "add": "منتج جديد",
+      "edit": "تعديل المنتج",
+      "available_in_shop": "متوفر في المتجر",
+      "note": {
+        "this": "ملاحظة",
+        "placeholder": "أدخل ملاحظة"
+      },
+      "table": {
+        "date": "التاريخ",
+        "item": "العنصر"
+      }
+    },
+    "reports": {
+      "this": "تقرير",
+      "plural": "التقارير"
+    },
+    "sales": {
+      "this": "الفاتورة",
+      "plural": "المبيعات",
+      "add": "فاتورة جديد",
+      "edit": "تعديل الفاتورة",
+      "table": {
+        "price": "السعر",
+        "status": "نوع الدفع",
+        "paid": "المدفوع",
+        "debet": "المتبقي",
+        "date": "التاريخ",
+        "user_full_name": "الاسم",
+        "type": "نوع العضوية",
+        "item_type": "نوع العنصر",
+        "item_price": "سعر العنصر",
+        "start_date": "تاريخ البدء",
+        "end_date": "تاريخ الانتهاء",
+        "quantity": "الكمية",
+        "staff_full_name": "البائع",
+        "item_name": "اسم العنصر"
+      }
+    },
+    "lead": {
+      "this": "مهنم",
+      "plural": "المهتمون",
+      "add": "إضافة مهتم جديد",
+      "edit": "تعديل مهتم",
+      "types": {
+        "status": {
+          "this": "حالة المهتم",
+          "add": "add lead status",
+          "edit": "edit lead status",
+          "placeholder": "enter status",
+          "validation": "status is required"
+        },
+        "source": {
+          "this": "مصدر المهتم",
+          "plural": "حالات المهتمون",
+          "add": "add lead source",
+          "edit": "edit lead source",
+          "placeholder": "enter source",
+          "validation": "source is required"
+        },
+        "reason": {
+          "this": "lead reason",
+          "plural": "اسباب الرفض",
+          "add": "add lead reason",
+          "edit": "edit lead reason"
+        }
+      },
+      "table": {
+        "source": {
+          "this": "المصدر",
+          "plural": "المصادر",
+          "placeholder": "enter source",
+          "validation": "source is required"
+        },
+        "assignee": {
+          "this": "assignee",
+          "plural": "assignees",
+          "placeholder": "enter assignee",
+          "validation": "assignee is required"
+        },
+        "task_status": "task status"
+      }
+    },
+    "branch": {
+      "this": "فرع",
+      "plural": "الفروع",
+      "add": "فرع جديد",
+      "edit": "تعديل الفرع"
+    },
+    "session": {
+      "this": "الجلسة",
+      "plural": "الجلسات",
+      "add": "إضافة جلسة جماعية",
+      "edit": "تعديل مجموعة الجلسة",
+      "create_another": "إنشاء أخرى",
+      "steps": {
+        "details": "تفاصيل",
+        "timing": "توقيت"
+      },
+      "coach": {
+        "this": "المدرب",
+        "plural": "المدربين",
+        "placeholder": "أدخل اسم المدرب",
+        "validation": "اسم المدرب مطلوب.",
+        "none": "لا يوجد مدرب",
+        "salary": {
+          "this": "راتب المدرب",
+          "placeholder": "أدخل راتب المدرب",
+          "validation": "راتب المدرب مطلوب"
+        }
+      },
+      "max_participants": {
+        "this": "الحد الأقصى للمشاركين",
+        "placeholder": "أدخل الحد الأقصى للمشاركين",
+        "validation": "الحد الأقصى للمشاركين مطلوب."
+      },
+      "repeat": {
+        "this": "تكرار",
+        "weekly": "أسبوعيًا",
+        "single": "مرة واحدة"
+      },
+      "schedule_on": "الجدولة يوم",
+      "just_once": "مرة واحدة",
+      "end_of_day": "نهاية اليوم",
+      "ends_at": "تنتهي في",
+      "type": {
+        "this": "نوع الجلسة",
+        "plural": "أنواع الجلسات",
+        "add": "نوع جديد للجلسة الجماعية",
+        "length": "المدة",
+        "select_length": "اختر مدة نوع الجلسة للمتابعة*",
+        "color": {
+          "this": "اللون"
+        }
+      }
+    },
+    "appointment": {
+      "this": "الموعد",
+      "plural": "المواعيد",
+      "add": "إضافة موعد",
+      "edit": "تعديل الموعد",
+      "create_another": "إنشاء أخري",
+      "type": {
+        "this": "نوع الموعد",
+        "plural": "أنواع المواعيد",
+        "add": "نوع جديد للموعد",
+        "length": "المدة",
+        "select_length": "اختر مدة الموعد للمتابعة*"
+      }
+    },
+    "course": {
+      "this": "الكورس",
+      "plural": "الكورسات",
+      "add": "إضافة موعد",
+      "edit": "تعديل الكورس",
+      "create_another": "إنشاء أخري",
+      "type": {
+        "this": "نوع الكورس",
+        "plural": "أنواع المواعيد",
+        "add": "نوع جديد للموعد",
+        "length": "المدة",
+        "select_length": "اختر مدة الكورس للمتابعة*"
+      }
+    },
+    "booking": {
+      "this": "booking",
+      "plural": "bookings",
+      "tabs": {
+        "waiting_list": "waiting list",
+        "cancellations": "cancellations"
+      },
+      "bookings_table": {
+        "booking_time": "booking time",
+        "arrived": "arrived"
+      }
+    },
+    "staff_member": {
+      "this": "عضو الفريق",
+      "new": "عضو جديد في الفريق",
+      "edit": "تعديل عضو الفريق",
+      "status": "حالة العضو",
+      "roles": "أدوار العضو",
+      "role": {
+        "this": "الدور",
+        "plural": "الأدوار"
+      },
+      "permissions": "الأذونات"
+    },
+    "invoice": {
+      "this": "الفاتورة",
+      "plural": "الفواتير",
+      "issue_date": "تاريخ الإصدار",
+      "invoice_no": "رقم الفاتورة",
+      "due_date": "تاريخ الاستحقاق",
+      "amount": "المبلغ"
+    },
+    "profile": {
+      "this": "الملف الشخصي",
+      "client_since": "العميل منذ",
+      "age": "العمر",
+      "year": {
+        "this": "العام",
+        "plural": "أعوام"
+      },
+      "tabs": {
+        "memberships_payments": "العضويات والمدفوعات",
+        "activity_log": "سجل النشاط",
+        "communication": "الاتصال",
+        "bookings": "الحجوزات"
+      },
+      "contact_details": {
+        "this": "تفاصيل الاتصال",
+        "email_list": "الاشتراك في قائمة البريد الإلكتروني",
+        "message_list": "الاشتراك في قائمة الرسائل النصية"
+      },
+      "documents": {
+        "this": "الوثائق",
+        "details": {
+          "this": "تفاصيل الوثائق",
+          "types": {
+            "medical": "الشهادة الطبية",
+            "waiver": "التنازل",
+            "insurance": "التأمين",
+            "basic_sessions": "الجلسات الأساسية",
+            "nutrition_counseling": "استشارات التغذية",
+            "facilikey": "الوصول إلى FaciliKey / HybridAF"
+          }
+        }
+      },
+      "injury_details": {
+        "this": "تفاصيل الإصابة"
+      },
+      "personal_details": {
+        "this": "تفاصيل شخصية",
+        "location": "الموقع",
+        "height": "الطول",
+        "weight": "الوزن"
+      }
+    },
+    "status": "الحالة",
+    "actions": "الإجراءات",
+    "select_item_first": "حدد النوع أولاً",
+    "select_item_first_to_continue": "حدد نوع العنصر أولاً للمتابعة",
+    "remember_me": "تذكرني",
+    "login": "تسجيل الدخول",
+    "next": "التالي",
+    "back": "العودة",
+    "done": "تم",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "add": "اضافة",
+    "save": "حفظ",
+    "confirm": "تأكيد",
+    "unknown": "غير معروف",
+    "no": "لا",
+    "yes": "نعم",
+    "at": "في",
+    "search": "بحث",
+    "minute": {
+      "this": "دقيقة",
+      "plural": "دقائق",
+      "app": "دقيقة"
+    },
+    "custom": "مخصص",
+    "fetch_data": {
+      "error": "عذرًا! حدث خطأ ما.",
+      "retry": "إعادة المحاولة",
+      "loading": "جاري التحميل... يرجى الانتظار"
+    },
+    "created_on": "تم الإنشاء في",
+    "created_by": "تم الإنشاء بواسطة",
+    "updated_at": "تم التحديث في",
+    "active": "نشط",
+    "item_is_active": "العنصر نشط",
+    "inactive": "غير نشط",
+    "expired": "منتهي",
+    "activate": "تنشيط",
+    "hold": "معلق",
+    "deactivate": "إلغاء التنشيط",
+    "delete": "حذف",
+    "sure_delete": "هل أنت متأكد أنك تريد حذف هذا",
+    "sure_want_to_deactivate": "هل أنت متأكد أنك تريد إلغاء تنشيط",
+    "sure_want_to_activate": "هل أنت متأكد أنك تريد تنشيط",
+    "this": "هذا",
+    "general": "عام"
+  },
+  "summary": {
+    "subtotal": {
+      "this": "الإجمالي الفرعي",
+      "placeholder": ""
+    },
+    "discount": {
+      "this": "الخصم",
+      "placeholder": ""
+    },
+    "final_charge": {
+      "this": "الرسوم النهائية",
+      "placeholder": ""
+    }
+  },
+  "signs": {
+    "egp": "د.ك"
+  },
+  "nav_drawer": {
+    "quick_access": "الوصول السريع",
+    "quick_access_menu": {
+      "new_member": "عضو جديد",
+      "new_member_menu": {
+        "personal_details": "تفاصيل شخصية",
+        "purchases": "المشتريات",
+        "payment": "الدفع",
+        "summary": "الملخص",
+        "the_amount_required": "المبلغ المطلوب",
+        "send_via_email": "إرسال معلومات تسجيل الدخول عبر البريد الإلكتروني؟",
+        "allow_payment_practices": "السماح بممارسات الدفع",
+        "paying_now": "الدفع الآن",
+        "enter_debt": "أدخل الدين",
+        "balance": {
+          "this": "الرصيد الموضح أدناه",
+          "placeholder": "أدخل قيمة الدين",
+          "validation": "الرصيد المطلوب."
+        }
+      },
+      "my_profile": "ملفي الشخصي",
+      "change_password": "تغيير كلمة المرور",
+      "log_out": "تسجيل الخروج"
+    },
+    "home": "الصفحة الرئيسية",
+    "member": {
+      "this": "العضو",
+      "plural": "الأعضاء",
+      "placeholder": "أدخل العضو",
+      "validation": "العضو مطلوب."
+    },
+    "sales": {
+      "this": "المبيعات",
+      "plural": "المبيعات"
+    },
+    "schedule": {
+      "this": "الجدول",
+      "plural": "الجداول",
+      "add": "add a session"
+    },
+    "task": {
+      "this": "المهمة",
+      "plural": "المهام",
+      "for": {
+        "this": "المهمة لصالح",
+        "placeholder": "اختر",
+        "validation": "مطلوب اختيار المهمة لصالح."
+      },
+      "starts_in": "يبدأ في",
+      "add": "مهمة جديدة",
+      "edit": "تحرير المهمة",
+      "status": {
+        "pending": "قيد الانتظار",
+        "completed": "مكتملة"
+      },
+      "type": {
+        "this": "نوع المهمة",
+        "placeholder": "اختر نوع المهمة",
+        "validation": "مطلوب اختيار نوع المهمة",
+        "items": {
+          "follow_up": "متابعة",
+          "customer_billing": "فواتير العملاء",
+          "membership_renewal": "تجديد العضوية",
+          "sales_call": "اتصال تسويقي",
+          "business_management": "إدارة الأعمال"
+        }
+      },
+      "start_date": "تاريخ البدء",
+      "start_time": {
+        "this": "وقت البدء",
+        "placeholder": "أدخل وقت البدء",
+        "validation": "وقت البدء مطلوب."
+      },
+      "reminder_time": "وقت التذكير"
+    },
+    "settings": {
+      "settings": "الإعدادات",
+      "business_settings": "اعدادات الأعمال",
+      "staff_members": "أعضاء الفريق",
+      "products": "المنتجات",
+      "membership_types": "أنواع العضوية"
+    }
+  },
+
+  "badge": "شارة",
+  "open": "Open",
+  "close": "إغلاق",
+  "dataIterator": {
+    "noResultsText": "لم يتم إيجاد نتائج",
+    "loadingText": "يتم جلب العناصر..."
+  },
+  "dataTable": {
+    "itemsPerPageText": "عدد الصفوف لكل صفحة:",
+    "ariaLabel": {
+      "sortDescending": "مرتب تنازلياً.",
+      "sortAscending": "مرتب تصاعدياً.",
+      "sortNone": "غير مرتب.",
+      "activateNone": "نشط لإزالة الترتيب.",
+      "activateDescending": "نشط للترتيب تنازلياً.",
+      "activateAscending": "نشط للترتيب تصاعدياً."
+    },
+    "sortBy": "رتب حسب"
+  },
+  "dataFooter": {
+    "itemsPerPageText": "عدد العناصر لكل صفحة:",
+    "itemsPerPageAll": "الكل",
+    "nextPage": "الصفحة التالية",
+    "prevPage": "الصفحة السابقة",
+    "firstPage": "الصفحة الأولى",
+    "lastPage": "الصفحة الأخيرة",
+    "pageText": "{0}-{1} من {2}"
+  },
+  "dateRangeInput": {
+    "divider": "to"
+  },
+  "datePicker": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "range": {
+      "title": "Select dates",
+      "header": "Enter dates"
+    },
+    "title": "Select date",
+    "header": "Enter date",
+    "input": {
+      "placeholder": "Enter date"
+    }
+  },
+  "noDataText": "لا توجد بيانات",
+  "carousel": {
+    "prev": "المعروض السابق",
+    "next": "المعروض التالي",
+    "ariaLabel": {
+      "delimiter": "المعروض رقم {0} من {1}"
+    }
+  },
+  "calendar": {
+    "moreEvents": "{0} أكثر"
+  },
+  "input": {
+    "clear": "Clear {0}",
+    "prependAction": "{0} prepended action",
+    "appendAction": "{0} appended action",
+    "otp": "Please enter OTP character {0}"
+  },
+  "fileInput": {
+    "counter": "{0} ملفات",
+    "counterSize": "{0} ملفات ({1} في المجموع)"
+  },
+  "timePicker": {
+    "am": "صباحاً",
+    "pm": "مساءً"
+  },
+  "pagination": {
+    "ariaLabel": {
+      "root": "الإنتقال بين الصفحات",
+      "next": "الصفحة التالية",
+      "previous": "الصفحة السابقة",
+      "page": "{0} انتقل إلى الصفحة",
+      "currentPage": "{0} الصفحة الحالية رقمها",
+      "first": "First page",
+      "last": "Last page"
+    }
+  },
+  "stepper": {
+    "next": "Next",
+    "prev": "Previous"
+  },
+  "rating": {
+    "ariaLabel": {
+      "item": "القييم {0} من {1}"
+    }
+  },
+  "loading": "Loading...",
+  "infiniteScroll": {
+    "loadMore": "Load more",
+    "empty": "No more"
+  }
+}

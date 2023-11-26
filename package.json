@@ -1,0 +1,51 @@
+{
+  "name": "zulu-dashboard-vuetify-1",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fullcalendar/core": "^6.1.9",
+    "@fullcalendar/daygrid": "^6.1.9",
+    "@fullcalendar/interaction": "^6.1.9",
+    "@fullcalendar/list": "^6.1.9",
+    "@fullcalendar/timegrid": "^6.1.9",
+    "@fullcalendar/vue3": "^6.1.9",
+    "@mdi/font": "^7.3.67",
+    "axios": "^1.6.0",
+    "chart.js": "^4.4.0",
+    "js-cookie": "^3.0.5",
+    "jspdf": "^2.5.1",
+    "mitt": "^3.0.1",
+    "or": "^0.2.0",
+    "roboto-fontface": "*",
+    "v-calendar": "^2.4.2",
+    "vue": "^3.3.7",
+    "vue-axios": "^3.5.2",
+    "vue-chartjs": "^5.2.0",
+    "vue-router": "^4.2.4",
+    "vue3-steppy": "^1.1.0",
+    "vuetify": "^3.3.23",
+    "vuex": "^4.1.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.52.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "vite": "^4.4.9",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue-cli-plugin-i18n": "~2.3.2"
+  }
+}

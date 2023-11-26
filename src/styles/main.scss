@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Ploni";
+  src: url("@/assets/fonts/ploni.woff") format("woff2"),
+    url("@/assets/fonts/ploni.woff2") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PloniMedium";
+  src: url("@/assets/fonts/plonim.woff") format("woff2"),
+    url("@/assets/fonts/plonim.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PloniSemiBold";
+  src: url("@/assets/fonts/plonisb.woff") format("woff2"),
+    url("@/assets/fonts/plonisb.woff") format("woff");
+  font-display: swap;
+}
+
+html {
+  font-family: "Ploni", sans-serif !important;
+  [class*="text-"] {
+    font-family: "Ploni", sans-serif !important;
+  }
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  // line-height: normal !important;
+}
+
+*:not(.v-field__input) {
+  text-transform: capitalize !important;
+}
+
+.v-field__input:not(.v-textarea .v-field__input) {
+  min-height: 40px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  input {
+    align-self: center !important;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 50px;
+}
+
+.v-list-item__prepend {
+  .v-badge .v-icon,
+  .v-icon {
+    margin-inline-end: 20px !important;
+  }
+  .v-list-item__spacer {
+    width: 0 !important;
+  }
+}
+
+.v-navigation-drawer__content {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.v-icon {
+  // font-size: initial;
+  width: fit-content;
+  height: fit-content;
+  --v-icon-size-multiplier: unset !important;
+}

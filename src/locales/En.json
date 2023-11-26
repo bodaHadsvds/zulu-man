@@ -1,0 +1,777 @@
+{
+  "global": {
+    "name": {
+      "this": "name",
+      "placeholder": "enter name",
+      "validation": "name is required."
+    },
+    "name_ar": {
+      "this": "name in arabic",
+      "placeholder": "enter name in arabic",
+      "validation": "name in arabic is required."
+    },
+    "name_en": {
+      "this": "name in english",
+      "placeholder": "enter name in english",
+      "validation": "name in english is required."
+    },
+    "first_name": {
+      "this": "first name",
+      "placeholder": "enter first name",
+      "validation": "first name is required."
+    },
+    "last_name": {
+      "this": "last name",
+      "placeholder": "enter last name",
+      "validation": "last name is required."
+    },
+    "email": {
+      "this": "e-mail",
+      "placeholder": "enter e-mail",
+      "validation": "e-mail is required.",
+      "exist_validation": "e-mail already exist.",
+      "exp_validation": "e-mail must be valid."
+    },
+    "password": {
+      "this": "password",
+      "placeholder": "enter password",
+      "validation": "password is required."
+    },
+    "old_password": {
+      "this": "old password",
+      "placeholder": "enter old password",
+      "validation": "old password is required.",
+      "incorrect": "old password is incorrect."
+    },
+    "new_password": {
+      "this": "new password",
+      "placeholder": "enter new password",
+      "validation": "new password is required."
+    },
+    "confirm_password": {
+      "this": "confirm password",
+      "placeholder": "repeat new password",
+      "validation": "confirm new password please!.",
+      "match": "your new password is not match."
+    },
+    "phone": {
+      "this": "phone number",
+      "placeholder": "enter phone number",
+      "validation": "phone number is required."
+    },
+    "additional_num": {
+      "this": "additional number",
+      "placeholder": "enter additional number",
+      "none": "no additional number"
+    },
+    "id_num": {
+      "this": "id number",
+      "placeholder": "enter id number",
+      "validation": "id number is required.",
+      "exist_validation": "id number already exist."
+    },
+    "employee_id": {
+      "this": "employee id",
+      "placeholder": "enter employee id",
+      "validation": "employee id is required.",
+      "exist_validation": "employee id already exist."
+    },
+    "birthdate": {
+      "this": "birthdate",
+      "placeholder": "enter birthdate",
+      "validation": "birthdate is required."
+    },
+    "gender": {
+      "this": "gender",
+      "placeholder": "enter gender",
+      "validation": "gender is required.",
+      "male": "male",
+      "female": "female"
+    },
+    "country": {
+      "this": "country",
+      "placeholder": "enter country",
+      "validation": "country is required."
+    },
+    "city": {
+      "this": "city",
+      "placeholder": "enter city",
+      "validation": "city is required."
+    },
+    "state": {
+      "this": "state / county",
+      "placeholder": "enter state / county"
+    },
+    "street": {
+      "this": "street",
+      "placeholder": "enter street",
+      "validation": "street is required."
+    },
+    "post_code": {
+      "this": "zip / post code",
+      "placeholder": "enter zip / post code"
+    },
+    "type": {
+      "this": "type",
+      "placeholder": "enter type",
+      "validation": "type is required."
+    },
+    "item": {
+      "this": "item",
+      "placeholder": "enter item",
+      "validation": "item is required."
+    },
+    "price": {
+      "this": "price",
+      "placeholder": "enter price",
+      "validation": "price is required."
+    },
+    "entrances": {
+      "this": "Entrances",
+      "placeholder": "Enter Entrances",
+      "validation": "Entrances required."
+    },
+    "sku": {
+      "this": "sku",
+      "placeholder": "enter sku",
+      "validation": "sku is required."
+    },
+    "qty": {
+      "this": "quantity",
+      "placeholder": "enter quantity",
+      "validation": "quantity is required."
+    },
+    "date": {
+      "this": "date",
+      "placeholder": "enter date ",
+      "validation": "date  is required."
+    },
+    "start": {
+      "this": "start",
+      "placeholder": "enter start date",
+      "validation": "start date is required."
+    },
+    "end": {
+      "this": "end",
+      "placeholder": "enter end date",
+      "validation": "end date is required."
+    },
+    "day": {
+      "this": "day",
+      "plural": "days",
+      "placeholder": "enter days",
+      "validation": "days are required.",
+      "names": {
+        "Sat": { "abbr": "Sat", "name": "Saturday" },
+        "Sun": { "abbr": "Sun", "name": "Sunday" },
+        "Mon": { "abbr": "Mon", "name": "Monday" },
+        "Tue": { "abbr": "Tue", "name": "Tuesday" },
+        "Wed": { "abbr": "Wed", "name": "ًWednesday" },
+        "Thu": { "abbr": "Thu", "name": "Thursday" },
+        "Fri": { "abbr": "Fri", "name": "Friday" }
+      }
+    },
+    "currency": {
+      "this": "currency",
+      "placeholder": "enter currency"
+    },
+    "description": {
+      "this": "description",
+      "placeholder": "enter description",
+      "validation": "description is required."
+    },
+    "purchase": {
+      "this": "purchase",
+      "plural": "purchases",
+      "add": "new purchase"
+    },
+    "FutureBooking": {
+      "this": "FutureBooking",
+      "placeholder": "Future Bookings"
+    },
+    "Booktocourse": {
+      "this": "Bookingtocourse",
+      "placeholder": "Book To Course"
+    },
+
+
+    "session_punch_cards": {
+      "this": "Session Punch Cards",
+      "add": "New Session Punch Cards"
+    },
+    "membership": {
+      "this": "membership",
+      "plural": "memberships",
+      "add": "New Membership Plan",
+      "edit": "edit membership plan",
+      "types": "membership types",
+      "time_period": "time period",
+      "plans": "Membership Plans",
+      "hold": {
+        "this": "hold membership",
+        "reason": {
+          "this": "hold reason",
+          "items": {
+            "medical_reason": "Medical Reason",
+            "military_duty": "Military duty",
+            "vacation": "Vacation",
+            "studies": "Studies",
+            "other": "Other",
+            "pregnancy": "Pregnancy",
+            "personal": "Personal",
+            "grief": "Grief",
+            "marriage": "Marriage",
+            "coronavirus": "Coronavirus"
+          }
+        },
+        "comment": {
+          "this": "comment",
+          "placeholder": "enter comment"
+        }
+      },
+      "cancel": {
+        "this": "cancel membership",
+        "reason": {
+          "this": "cancel reason",
+          "items": {
+            "moving": "Moving",
+            "medical": "Medical",
+            "another_gym": "Moved to another gym",
+            "didn't_like": "Didn't like",
+            "expensive": "Too Expensive",
+            "other": "Other",
+            "intense": "Too Intense",
+            "membership_change": "Membership Change",
+            "no_time": "No Time",
+            "didn't_wait": "Didn't wait for openning",
+            "internal_mistake": "Internal Mistake",
+            "freefit": "FreeFit",
+            "credit_declined": "Credit Transaction Declined",
+            "credit_canceled": "Cancelled Credit Card",
+            "family": "Family Reason",
+            "quaratine": "Quaratine",
+            "coronavirus": "Coronavirus",
+            "facilities": "Facilities",
+            "not_enought_time": "Not Enough Time",
+            "didn't_like_staff": "Didn't Like The Staff",
+            "pregnancy": "Pregnancy",
+            "traffic": "Traffic",
+            "competition": "Competition",
+            "location_change": "Location Change"
+          }
+        },
+        "comment": {
+          "this": "comment",
+          "placeholder": "enter comment"
+        }
+      },
+      "table": {
+        "purchase_date": "Purchase Date",
+        "value": "Value",
+        "balance": "Balance",
+        "sessions_left": "Sessions Left"
+      },
+      "active": "active memberships",
+      "future": "future memberships",
+      "expiration_period": "expiration period",
+      "time_per": {
+        "this": "time per",
+        "placeholder": "enter membership period time",
+        "validation": "membership period time is required",
+        "type": {
+          "this": "period type",
+          "plural": "period types",
+          "validation": "period type is required",
+          "items": {
+            "days": "days",
+            "weeks": "weeks",
+            "months": "months",
+            "years": "years"
+          }
+        }
+      }
+    },
+    "product": {
+      "this": "product",
+      "plural": "products",
+      "add": "new product",
+      "edit": "edit product",
+      "available_in_shop": "available in shop",
+      "note": {
+        "this": "note",
+        "placeholder": "enter note"
+      },
+      "table": {
+        "date": "date",
+        "item": "item"
+      }
+    },
+    "reports": {
+      "this": "report",
+      "plural": "reports"
+    },
+    "sales": {
+      "this": "Sale",
+      "plural": "Sales",
+      "add": "New Invoice",
+      "edit": "Edit Invoice",
+      "table": {
+        "price": "Price",
+        "status": "Payment Type",
+        "paid": "Paid",
+        "debet": "Balance",
+        "date": "Date",
+        "user_full_name": "Name",
+        "type": "User",
+        "item_type": "Product Type",
+        "staff_full_name": "Salesman",
+        "item_name": "Item"
+      }
+    },
+    "lead": {
+      "this": "lead",
+      "plural": "leads",
+      "add": "new lead",
+      "edit": "edit lead",
+      "types": {
+        "status": {
+          "this": "lead status",
+          "add": "add lead status",
+          "edit": "edit lead status",
+          "placeholder": "enter status",
+          "validation": "status is required"
+        },
+        "source": {
+          "this": "lead source",
+          "plural": "lead sources",
+          "add": "add lead source",
+          "edit": "edit lead source",
+          "placeholder": "enter source",
+          "validation": "source is required"
+        },
+        "reason": {
+          "this": "lead reason",
+          "plural": "lead reasons",
+          "add": "add lead reason",
+          "edit": "edit lead reason"
+        }
+      },
+      "table": {
+        "source": {
+          "this": "source",
+          "plural": "sources",
+          "placeholder": "enter source",
+          "validation": "source is required"
+        },
+        "assignee": {
+          "this": "assignee",
+          "plural": "assignees",
+          "placeholder": "enter assignee",
+          "validation": "assignee is required"
+        },
+        "task_status": "task status"
+      }
+    },
+    "branch": {
+      "this": "branch",
+      "plural": "branches",
+      "add": "new branch",
+      "edit": "edit branch"
+    },
+    "session": {
+      "this": "session",
+      "plural": "sessions",
+      "add": "add a group session",
+      "edit": "edit session group",
+      "create_another": "create another",
+      "steps": {
+        "details": "details",
+        "timing": "timing"
+      },
+      "coach": {
+        "this": "coach",
+        "plural": "coaches",
+        "placeholder": "enter coach",
+        "validation": "coach is required.",
+        "none": "no coach",
+        "salary": {
+          "this": "coach salary",
+          "placeholder": "enter coach salary",
+          "validation": "coach salary is required"
+        }
+      },
+      "max_participants": {
+        "this": "max participants",
+        "placeholder": "enter max participants",
+        "validation": "max participants is required."
+      },
+      "repeat": {
+        "this": "repeat",
+        "weekly": "weekly",
+        "single": "single"
+      },
+      "schedule_on": "schedule on",
+      "just_once": "just once",
+      "end_of_day": "end of the day",
+      "ends_at": "ends at",
+      "type": {
+        "this": "session type",
+        "plural": "session types",
+        "add": "New Group Session Type",
+        "length": "length",
+        "select_length": "Select session type length to continue*",
+        "color": {
+          "this": "color"
+        }
+      }
+    },
+    "appointment": {
+      "this": "appointment",
+      "plural": "appointments",
+      "add": "add an appointment",
+      "edit": "edit appointment",
+      "type": {
+        "this": "appointment type",
+        "plural": "appointment types",
+        "add": "New appointment Type",
+        "length": "length",
+        "select_length": "Select appointment type length to continue*"
+      }
+    },
+    "course": {
+      "this": "course",
+      "plural": "courses",
+      "add": "add an course",
+      "edit": "edit course",
+      "type": {
+        "this": "course type",
+        "plural": "course types",
+        "add": "New course Type",
+        "length": "length",
+        "select_length": "Select course type length to continue*"
+      }
+    },
+    "booking": {
+      "this": "booking",
+      "plural": "bookings",
+      "tabs": {
+        "waiting_list": "waiting list",
+        "cancellations": "cancellations"
+      },
+      "bookings_table": {
+        "booking_time": "booking time",
+        "arrived": "arrived"
+      },
+      "cancellations_table": {
+        "cancellation_time": "cancellation time",
+        "canceled_by": "canceled by"
+      }
+    },
+    "staff_member": {
+      "this": "staff member",
+      "new": "new staff memeber",
+      "edit": "edit staff memeber",
+      "status": "member status",
+      "roles": "member roles",
+      "role": {
+        "this": "role",
+        "plural": "roles"
+      },
+      "permissions": "permissions"
+    },
+    "invoice": {
+      "this": "Invoice",
+      "plural": "invoices",
+      "issue_date": "Issue Date",
+      "invoice_no": "Invoice NO.",
+      "due_date": "Due date",
+      "amount": "Amount"
+    },
+    "profile": {
+      "this": "profile",
+      "client_since": "client since",
+      "age": "age",
+      "year": {
+        "this": "year",
+        "plural": "years"
+      },
+      "tabs": {
+        "memberships_payments": "Memberships & Payments",
+        "activity_log": "Activity Log",
+        "communication": "Communication",
+        "bookings": "Bookings"
+      },
+      "contact_details": {
+        "this": "contact details",
+        "email_list": "subscribe to email list",
+        "message_list": "subscribe to text message list"
+      },
+      "documents": {
+        "this": "documents",
+        "details": {
+          "this": "documents details",
+          "types": {
+            "medical": "Medical Certificate",
+            "waiver": "waiver",
+            "insurance": "insurance",
+            "basic_sessions": "basic sessions",
+            "nutrition_counseling": "nutrition counseling",
+            "facilikey": "FaciliKey / HybridAF Access"
+          }
+        }
+      },
+      "injury_details": {
+        "this": "injury details"
+      },
+      "personal_details": {
+        "this": "personal details",
+        "location": "location",
+        "height": "height",
+        "weight": "weight"
+      }
+    },
+    "status": "Status",
+    "actions": "Actions",
+    "select_item_first": "Select the type first",
+    "select_item_first_to_continue": "Select item type first to continue",
+    "remember_me": "remember me",
+    "login": "login",
+    "next": "next",
+    "back": "back",
+    "done": "done",
+    "cancel": "cancel",
+    "close": "close",
+    "add": "add",
+    "save": "save",
+    "confirm": "confirm",
+    "unknown": "unknown",
+    "no": "no",
+    "yes": "yes",
+    "at": "at",
+    "search": "search",
+    "minute": {
+      "this": "minute",
+      "plural": "minutes",
+      "appr": "min"
+    },
+    "custom": "custom",
+    "fetch_data": {
+      "error": "sorry! something went wrong.",
+      "retry": "retry",
+      "loading": "Loading... please wait"
+    },
+    "created_on": "created on",
+    "created_by": "created by",
+
+    "updated_at": "updated at",
+    "active": "active",
+    "item_is_active": "item is active",
+    "inactive": "inactive",
+    "expired": "expired",
+    "activate": "activate",
+    "hold": "hold",
+    "deactivate": "deactivate",
+    "delete": "delete",
+    "are_you_sure": "are you sure?",
+    "sure_delete": "are you sure you want to delete this",
+    "sure_want_to_deactivate": "Are you sure you want to deactivate",
+    "sure_want_to_activate": "Are you sure you want to activate",
+    "this": "this",
+    "general": "general"
+  },
+  "summary": {
+    "subtotal": {
+      "this": "subtotal",
+      "placeholder": ""
+    },
+    "discount": {
+      "this": "discount",
+      "placeholder": ""
+    },
+    "final_charge": {
+      "this": "final_charge",
+      "placeholder": ""
+    }
+  },
+  "signs": {
+    "egp": "KWD"
+  },
+  "nav_drawer": {
+    "quick_access": "quick access",
+    "quick_access_menu": {
+      "new_member": "new member",
+      "new_member_menu": {
+        "personal_details": "personal details",
+        "purchases": "purchases",
+        "payment": "payment",
+        "summary": "summary",
+        "the_amount_required": "the amount required",
+        "send_via_email": "Send app login information via email?",
+        "allow_payment_practices": "Allowed Payment Practices",
+        "paying_now": "Paying Now",
+        "enter_debt": "enter debt",
+        "balance": {
+          "this": "Indicated Below",
+          "placeholder": "Enter debt value",
+          "validation": "debt balance is required."
+        }
+      },
+      "my_profile": "my profile",
+      "change_password": "change password",
+      "log_out": "log out"
+    },
+    "home": "home",
+    "member": {
+      "this": "member",
+      "plural": "members",
+      "placeholder": "enter member",
+      "validation": "member is required."
+    },
+    "sales": {
+      "this": "Sale",
+      "plural": "Sales"
+    },
+    "schedule": {
+      "this": "schedule",
+      "plural": "schedules",
+      "add": "add a session"
+    },
+    "task": {
+      "this": "task",
+      "plural": "tasks",
+      "for": {
+        "this": "task for",
+        "placeholder": "select",
+        "validation": "task for is required."
+      },
+      "starts_in": "starts in",
+      "add": "new task",
+      "edit": "edit task",
+      "status": {
+        "pending": "pending",
+        "completed": "completed"
+      },
+      "type": {
+        "this": "task type",
+        "placeholder": "Select Task Type",
+        "validation": "task type is required",
+        "items": {
+          "follow_up": "follow up",
+          "customer_billing": "customer billing",
+          "membership_renewal": "membership renewal",
+          "sales_call": "sales call",
+          "business_management": "business management"
+        }
+      },
+      "start_date": "start date",
+      "start_time": {
+        "this": "start time",
+        "placeholder": "enter start time",
+        "validation": "start time is required."
+      },
+      "reminder_time": "reminder time"
+    },
+    "settings": {
+      "settings": "settings",
+      "business_settings": "business settings",
+      "staff_members": "staff members",
+      "products": "products",
+      "membership_types": "membership types"
+    }
+  },
+
+  "badge": "Badge",
+  "open": "Open",
+  "close": "Close",
+  "dataIterator": {
+    "noResultsText": "No matching records found",
+    "loadingText": "Loading items..."
+  },
+  "dataTable": {
+    "itemsPerPageText": "Rows per page:",
+    "ariaLabel": {
+      "sortDescending": "Sorted descending.",
+      "sortAscending": "Sorted ascending.",
+      "sortNone": "Not sorted.",
+      "activateNone": "Activate to remove sorting.",
+      "activateDescending": "Activate to sort descending.",
+      "activateAscending": "Activate to sort ascending."
+    },
+    "sortBy": "Sort by"
+  },
+  "dataFooter": {
+    "itemsPerPageText": "Items per page:",
+    "itemsPerPageAll": "All",
+    "nextPage": "Next page",
+    "prevPage": "Previous page",
+    "firstPage": "First page",
+    "lastPage": "Last page",
+    "pageText": "{0}-{1} of {2}"
+  },
+  "dateRangeInput": {
+    "divider": "to"
+  },
+  "datePicker": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "range": {
+      "title": "Select dates",
+      "header": "Enter dates"
+    },
+    "title": "Select date",
+    "header": "Enter date",
+    "input": {
+      "placeholder": "Enter date"
+    }
+  },
+  "noDataText": "No data available",
+  "carousel": {
+    "prev": "Previous visual",
+    "next": "Next visual",
+    "ariaLabel": {
+      "delimiter": "Carousel slide {0} of {1}"
+    }
+  },
+  "calendar": {
+    "moreEvents": "{0} more"
+  },
+  "input": {
+    "clear": "Clear {0}",
+    "prependAction": "{0} prepended action",
+    "appendAction": "{0} appended action",
+    "otp": "Please enter OTP character {0}"
+  },
+  "fileInput": {
+    "counter": "{0} files",
+    "counterSize": "{0} files ({1} in total)"
+  },
+  "timePicker": {
+    "am": "AM",
+    "pm": "PM"
+  },
+  "pagination": {
+    "ariaLabel": {
+      "root": "Pagination Navigation",
+      "next": "Next page",
+      "previous": "Previous page",
+      "page": "Go to page {0}",
+      "currentPage": "Page {0}, Current page",
+      "first": "First page",
+      "last": "Last page"
+    }
+  },
+  "stepper": {
+    "next": "Next",
+    "prev": "Previous"
+  },
+  "rating": {
+    "ariaLabel": {
+      "item": "Rating {0} of {1}"
+    }
+  },
+  "loading": "Loading...",
+  "infiniteScroll": {
+    "loadMore": "Load more",
+    "empty": "No more"
+  }
+}
