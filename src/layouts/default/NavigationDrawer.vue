@@ -7,8 +7,10 @@
     floating
     width="500"
     temporary
+  
   >
-    <v-card class="mx-auto" width="300">
+    <v-container class="mx-auto  " width="300"  >
+      <v-card color="grey-lighten-3"  class="mx-auto"> 
       <v-responsive> 
       <v-text-field
         v-model="searchField"
@@ -16,18 +18,54 @@
         density="compact"
         variant="solo"
         label="search"
-        append-inner-icon="search"
+        append-inner-icon="magnify"
         single-line
         hide-details
         @input="searchField()"
         
-      ></v-text-field>
+      > <v-icon  class="icon"   icon="fa:fas fa-search"></v-icon></v-text-field>
+     
     </v-responsive>
-    </v-card>
-    <v-list v-for="item in itemgroup" :key="item.title" color="blue">
-      <v-list-item :title="item.title"></v-list-item>
-      <v-list-item v-for="user in item.value" :key="user.name" :title="user.name"></v-list-item>
+  </v-card>
+    </v-container >
+<v-container class="mx-auto  " max-width="300" >    
+
+    <v-list lines="two"  >
+
+      <v-container class="h-25"> 
+    <h2 class="bg-indigo-darken-4 mx-auto rounded">Members </h2> 
+      
+      <v-list-item class="searchbar"
+       v-for="member in members"
+       :key="member.id"
+      :title="member.first_name + '  '+ member.last_name ">
+     
+    </v-list-item>
+  </v-container>
+
+  <v-container>  
+    <h2  class=" bg-indigo-darken-4  mx-auto  rounded"> leads</h2>   
+    <v-list-item
+       v-for="lead in leads"
+       :key="lead.id"
+      :title="  lead.first_name + '   ' +lead.last_name">
+    </v-list-item>
+  </v-container>
+
+  <v-container>
+
+     <h2 class="bg-indigo-darken-4 mx-auto rounded">staff members </h2>
+
+
+    <v-list-item
+       v-for="staffmembe in staffmember"
+       :key="staffmembe.id"
+      :title=" staffmembe.name ">
+    </v-list-item>
+
+  </v-container>
     </v-list>
+</v-container>
   </v-navigation-drawer>
   <v-navigation-drawer class="main-navigation" permanent :rail="rail" width="200">
     <v-list>
@@ -272,17 +310,18 @@ export default {
       });
     },
     getsearchdata(name){
-      console.log("40" ,name)
+     
    this.axios({
+
     url:`user/search?name=${name}`,
     method:"Get"
   
    }).then( (res)=>{
-  console.log(name , "50")
+
   if(res.status===200){
     // console.log(  'search15', this.$store.commit("auth/search")) 
     console.log(res.data)
-      this.members= res.data.members
+      this.members= res.data.member
       this.staffmember=res.data.staff
       this.leads=res.data.leads
     
@@ -317,7 +356,9 @@ export default {
 
     },
     members(oldval,newVal){
+    
       this.members =newVal
+     
     },
     leads(oldval,newVal){
       this.leads =newVal
@@ -396,6 +437,37 @@ export default {
   overflow: auto !important;
   flex: 1 !important;
 }
+
+.searchbar{
+  align-items: stretch;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    list-style: none;
+    margin: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding: 0px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    font-family: Ploni;
+    font-size: 16px;
+}
+.fex {
+  flex-direction: row;
+}
+.icon{
+display:flex ;
+justify-content: end;
+}
+
+
+
 </style>
 <!-- <style>
   .v-navigation-drawer >>> .v-navigation-drawer__content {

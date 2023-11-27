@@ -133,7 +133,7 @@
                   <v-card-actions>
                     <v-spacer></v-spacer>
 
-                    <v-btn text="yes" @click="continue1"></v-btn>
+                    <v-btn text="yes" @click="alert()"></v-btn>
                     <v-btn text="No" @click="isActive.value = false"></v-btn>
                   </v-card-actions>
                 </v-card>
@@ -142,6 +142,20 @@
             </v-dialog>
             </v-list-item-title>
             </v-list-item>
+            <v-container>
+      
+    </v-container>
+
+    <v-alert
+      color="success"
+      icon="$success"
+      title="send welcome message successfully
+      "
+      v-if="alertmessage"
+        transition="scale-transition"
+      text="please check your E-mail"
+      :value="alert"
+      ></v-alert>
             <!-------------------------------------------------------------------------------------------->      
 
 
@@ -522,6 +536,10 @@ export default {
   data: () => ({
     tab: null,
     isActive: false,
+    isopen: false,
+    message: '',
+    alert:true,
+    alertmessage: false,
     bookingsTypes: [
       { type: "history", title: "Bookings history" },
       { type: "cancelled", title: "Late Cancellations" },
@@ -590,7 +608,7 @@ export default {
       this.$store.dispatch("members/fetchUser", this.id);
     },
     changeUser() {
-      console.log("here");
+    
       axios({
         url: `/user/update_status/${this.id}`,
         method: "post",
@@ -599,19 +617,76 @@ export default {
         },
       }).then((res) => {
         isActive.value = false;
-        console.log(res);
+        console.log( "res" ,res.data);
       });
     },
+    welcomemsg() {
+      axios({
+      url:`/send-mail/${this.id}`,
+      method:'post',
+      data :{
+        type : 'password'
+      }
+      
+      
+      } ).then((res)=>{
+
+
+
+        if (res.status===200){
+    
+          this.message=res.data.message
+          console.log( "data" ,res.data)
+        }
+      
+      })
+    }, 
+     onClick() {
+            if (this.isOpen === true) {
+                this.isOpen = false
+            } else {
+                this.isOpen = true
+            }
+          },
+
+    convert() {
+      axios({
+      url:`convert/${this.id}`,
+      method:'post',
+      data :{
+        type : 'staff'
+      }
+      
+      } ).then((res)=>{
+        
+            console.log( "data" ,res.data)
+      })
+    },
+    alert(){
+      this.alert =!this.alert
+    }
+
   },
-  watch: {
+   watch: {
     NewBooking: function (old, neww) {
       console.log("1:", old);
       console.log("2:", neww);
     },
+     message(oldval,newVal){
+       this.message=newVal
+     },
+     alert(oldval,newVal){
+      this.alert =newVal
+      console.log( '1', oldval)
+      console.log('2',newVal)
+     }
   },
 
   mounted() {
     this.loadMember();
+    this.welcomemsg();
+    this.convert();
+    this.changeUser();
   },
 };
 </script>
