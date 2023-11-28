@@ -5,25 +5,26 @@
     sticky
     rounded
     floating
-    width="500"
+    width="400"
     temporary
   
   >
     <v-container class="mx-auto  " width="300"  >
-      <v-card color="grey-lighten-3"  class="mx-auto"> 
+      <v-card   class=" tab "  > 
       <v-responsive> 
-      <v-text-field
+      <v-text-field 
         v-model="searchField"
         :loading="loading"
         density="compact"
         variant="solo"
         label="search"
-        append-inner-icon="magnify"
+        append-inner-icon="fa-solid fa-magnifying-glass"
         single-line
         hide-details
         @input="searchField()"
-        
-      > <v-icon  class="icon"   icon="fa:fas fa-search"></v-icon></v-text-field>
+
+        class="v-text-field--outlined"
+      > </v-text-field>
      
     </v-responsive>
   </v-card>
@@ -32,35 +33,50 @@
 
     <v-list lines="two"  >
 
-      <v-container class="h-25"> 
-    <h2 class="bg-indigo-darken-4 mx-auto rounded">Members </h2> 
-      
-      <v-list-item class="searchbar"
+      <v-container class="h-25  "  > 
+    <h2 class=" mx-auto rounded araboc"> Members   <v-icon icon="fa-solid fa-users"></v-icon>   <v-btn small class=""> <div class=""> + Add new member</div> </v-btn></h2> 
+    
+     
+
+      <v-list-item   class="d-flex flex-row justfay-space-around"
        v-for="member in members"
        :key="member.id"
-      :title="member.first_name + '  '+ member.last_name ">
-     
-    </v-list-item>
+      :title="   member.first_name + '  '+ member.last_name  "
+   
+      >  <v-icon class="flex-warp" icon="fa-solid fa-users"></v-icon> 
+      
+   
+      
+      <v-btn class="bttn"  depressed>
+       inactive
+      </v-btn>
+    
+    </v-list-item>             
+
   </v-container>
 
   <v-container>  
-    <h2  class=" bg-indigo-darken-4  mx-auto  rounded"> leads</h2>   
-    <v-list-item
+    <h2  class=" araboc mx-auto  rounded"> Leads   <v-icon  icon=" fa-solid fa-circle-user">     </v-icon> </h2>   
+  
+    <v-list-item class="searchbar"
        v-for="lead in leads"
        :key="lead.id"
       :title="  lead.first_name + '   ' +lead.last_name">
+    <v-icon class="d-flex" icon=" fa-solid fa-circle-user">     </v-icon>
     </v-list-item>
+
   </v-container>
 
   <v-container>
 
-     <h2 class="bg-indigo-darken-4 mx-auto rounded">staff members </h2>
+     <h2 class=" araboc mx-auto rounded">staff members <v-icon icon="fa-solid fa-users"></v-icon></h2>
 
 
-    <v-list-item
+    <v-list-item  class="searchbar"
        v-for="staffmembe in staffmember"
        :key="staffmembe.id"
-      :title=" staffmembe.name ">
+      :title="staffmembe.first_name + '     '+staffmembe.last_name">
+      <v-icon icon="fa-solid fa-users"></v-icon>
     </v-list-item>
 
   </v-container>
@@ -391,15 +407,25 @@ export default {
 
   .user-item {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: stretch;
     text-align: center;
     .v-list-item__content {
       width: 100%;
+     
+    
       .v-list-item-title {
         margin-bottom: 5px;
       }
     }
+    
+    
+
+    .v-liist{
+      display: flex;
+    flex-direction: row;
+    }
+
 
     .v-list-item__prepend {
       .v-avatar {
@@ -410,6 +436,7 @@ export default {
       }
     }
   }
+  
   .v-list .v-list-item--nav:not(:only-child) {
     margin-bottom: 8px;
   }
@@ -425,6 +452,9 @@ export default {
     font-size: 16px;
   }
 }
+
+
+
 .logo-link {
   display: flex;
   justify-content: center;
@@ -446,6 +476,7 @@ export default {
     display: flex;
     flex-basis: auto;
     flex-direction: column;
+    justify-content: center;
     flex-shrink: 0;
     list-style: none;
     margin: 0px;
@@ -455,8 +486,8 @@ export default {
     position: relative;
     text-decoration: none;
     z-index: 0;
-    font-family: Ploni;
-    font-size: 16px;
+    font-family:   "Segoe UI", Roboto , Helvetica, Arial, sans-serif;
+    font-size: 10px;
 }
 .fex {
   flex-direction: row;
@@ -466,8 +497,71 @@ display:flex ;
 justify-content: end;
 }
 
+.v-list-item--density-default.v-list-item--two-line .v-liist{
 
+     min-height: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-direction: row;
+    display: flex;
 
+}
+.v-list-item__content.v-liist{
+flex-direction: row;
+}
+
+.araboc{
+  background-color: rgb(244, 244, 245);
+  padding-top:0.2rem ;
+  padding-left: 0.2rem;
+  padding-bottom: -0.5rem;
+  padding-right:0.5rem ;
+  justify-content: space-between ;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+
+}
+
+.tab{
+  // padding-top:0.2rem ;
+  // padding-left: 0.2rem;
+  // padding-bottom: -0.5rem;
+  // padding-right:0.5rem ;
+  // flex-direction: row;
+  // align-items: center;
+  padding: 1px 13px;
+    position: sticky;
+    top: -25px;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+  
+
+}
+.bttn{
+  padding:0.3rem;
+  display: flex;
+  justify-content:space-between;
+   margin-left: 120px;
+   background-color: rgb(244, 244, 245);
+}
+
+.text{
+  padding: 0;
+    height: auto;
+}
+
+.custom-btn{
+  display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.btttn{
+ 
+}
 </style>
 <!-- <style>
   .v-navigation-drawer >>> .v-navigation-drawer__content {

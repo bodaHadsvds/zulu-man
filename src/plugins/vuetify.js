@@ -6,6 +6,8 @@
 
 // Styles
 import "@mdi/font/css/materialdesignicons.css";
+import { mdi } from 'vuetify/iconsets/mdi'
+
 import "vuetify/styles";
 import ar from "@/locales/Ar";
 import en from "@/locales/En";
@@ -59,7 +61,8 @@ export default createVuetify({
     defaultSet: "fa",
     aliases,
     sets: {
-      fa,
+      fa
+      ,
     },
   },
   locale: {

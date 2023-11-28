@@ -75,14 +75,18 @@ html {
   }
 }
 
-.v-navigation-drawer__content {
-  display: flex !important;
-  flex-direction: column !important;
-}
+// .v-navigation-drawer__content {
+//   display: flex !important;
+//   flex-direction: column !important;
+// }
 
 .v-icon {
   // font-size: initial;
   width: fit-content;
   height: fit-content;
   --v-icon-size-multiplier: unset !important;
+}
+
+.v-text-field--outlined fieldset{
+color :blue !important
 }
