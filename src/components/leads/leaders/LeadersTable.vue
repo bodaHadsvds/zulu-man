@@ -1,4 +1,4 @@
-<template>
+<template >
   <v-toolbar class="bg-background px-0 py-4 pt-0">
     <v-row>
       <v-col cols="6" class="d-flex align-center justify-start">

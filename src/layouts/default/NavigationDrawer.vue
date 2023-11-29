@@ -9,7 +9,7 @@
     temporary
   
   >
-    <v-container class="mx-auto  " width="300"  >
+    <v-container class="mx-auto" width="300"  >
       <v-card   class=" tab "  > 
       <v-responsive> 
       <v-text-field 
@@ -29,57 +29,52 @@
     </v-responsive>
   </v-card>
     </v-container >
-<v-container class="mx-auto  " max-width="300" >    
+<v-container class="mx-auto px-0" max-width="300" >    
 
     <v-list lines="two"  >
-
       <v-container class="h-25  "  > 
-    <h2 class=" mx-auto rounded araboc"> Members   <v-icon icon="fa-solid fa-users"></v-icon>   <v-btn small class=""> <div class=""> + Add new member</div> </v-btn></h2> 
-    
-     
-
-      <v-list-item   class="d-flex flex-row justfay-space-around"
-       v-for="member in members"
-       :key="member.id"
-      :title="   member.first_name + '  '+ member.last_name  "
-   
-      >  <v-icon class="flex-warp" icon="fa-solid fa-users"></v-icon> 
-      
-   
-      
-      <v-btn class="bttn"  depressed>
-       inactive
-      </v-btn>
-    
-    </v-list-item>             
+        <v-container class="bg-surface-variant justify-space-between d-flex">
+          <span> Members </span>
+        <v-btn size="x-small" color="blue"  @click="newMemberSheet =! newMemberSheet" >  + Add new member </v-btn> 
+        </v-container>
+        <v-list-item class="results-list" v-for="member in members" :key="member.id" :to="{name: 'Members'}">
+          <v-list-item-title> <v-icon     class="mr-2" icon="fa-solid fa-circle-user" > </v-icon> {{ member.first_name + '  '+ member.last_name  }}</v-list-item-title>
+          <v-btn class="bttn"  depressed>inactive</v-btn>
+        </v-list-item>             
 
   </v-container>
 
-  <v-container>  
-    <h2  class=" araboc mx-auto  rounded"> Leads   <v-icon  icon=" fa-solid fa-circle-user">     </v-icon> </h2>   
-  
-    <v-list-item class="searchbar"
-       v-for="lead in leads"
-       :key="lead.id"
-      :title="  lead.first_name + '   ' +lead.last_name">
-    <v-icon class="d-flex" icon=" fa-solid fa-circle-user">     </v-icon>
+  <v-container  >  
+    <v-container class="bg-surface-variant justify-space-between d-flex">  
+     <span>Leads</span>
+     <router-link to="/leads" custom v-slot="{navigate}">  <v-btn  size="x-small"   color="blue" @click="navigate" role="link">  + Add new leads</v-btn>    </router-link>
+    </v-container>
+    <v-list-item class="results-list"   v-for="lead in leads" :key="lead.id">
+      <v-list-item-title>   <v-icon class="mr-2" icon=" fa-solid fa-circle-user">   </v-icon> {{  lead.first_name + '   ' +lead.last_name}}   </v-list-item-title>
+     <v-btn class="bttn"  depressed>  inactive </v-btn>
     </v-list-item>
 
   </v-container>
+
 
   <v-container>
-
-     <h2 class=" araboc mx-auto rounded">staff members <v-icon icon="fa-solid fa-users"></v-icon></h2>
-
-
-    <v-list-item  class="searchbar"
+    <v-container  class="bg-surface-variant justify-space-between d-flex"> 
+    <span> staff memebers</span> 
+    <router-link to="/staff-members/:id" custom v-slot="{navigate}">  <v-btn  size="x-small"   color="blue" @click="navigate" role="link">  + Add new staffmembers</v-btn>    </router-link>
+    </v-container>                      
+    <v-list-item  class="results-list"
        v-for="staffmembe in staffmember"
        :key="staffmembe.id"
-      :title="staffmembe.first_name + '     '+staffmembe.last_name">
-      <v-icon icon="fa-solid fa-users"></v-icon>
-    </v-list-item>
+   >
+      <v-list-item-title>    <v-icon class="mr-2" icon=" fa-solid fa-circle-user"></v-icon>   {{staffmembe.first_name + '     '+staffmembe.last_name}}     </v-list-item-title>
+      <v-btn class="bttn"  depressed>
+       inactive
+      </v-btn> 
 
-  </v-container>
+
+    </v-list-item>
+ </v-container>
+  
     </v-list>
 </v-container>
   </v-navigation-drawer>
@@ -170,6 +165,7 @@
     </v-list>
 
     <new-member v-model="newMemberSheet" @close="newMemberSheet = !newMemberSheet" />
+
 
     <v-list :lines="false" density="compact" class="nav-links" nav>
       <v-list-item
@@ -271,10 +267,9 @@
 // import { SplitVendorChunkCahe } from 'vite'
 import { defineAsyncComponent } from "vue";
 const NewMember = defineAsyncComponent(() => import("@/components/NewMember.vue"));
-
 export default {
   // props: ["drawerToggler", "railProp"],
-  components: { NewMember },
+  components: { NewMember},
   data: () => ({
     members:[],
     leads:[],
@@ -395,7 +390,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
+
 :deep() {
+  .results-list .v-list-item__content{
+  display: flex !important;
+  justify-content: space-between !important;
+}
   .v-list-group__items {
     .v-list-item {
       padding-inline-start: 10px !important;
@@ -405,14 +408,14 @@ export default {
     }
   }
 
-  .user-item {
-    display: flex;
-    flex-direction:row;
-    align-items: stretch;
-    text-align: center;
+  .search-item {
+       display: flex;
+       flex-direction:row;
+       align-items: stretch;
+       text-align: center;
     .v-list-item__content {
-      width: 100%;
-     
+       width: 100%;
+ 
     
       .v-list-item-title {
         margin-bottom: 5px;
@@ -423,7 +426,7 @@ export default {
 
     .v-liist{
       display: flex;
-    flex-direction: row;
+      flex-direction: row;
     }
 
 
@@ -438,20 +441,82 @@ export default {
   }
   
   .v-list .v-list-item--nav:not(:only-child) {
-    margin-bottom: 8px;
+        margin-bottom: 8px;
   }
   .v-list-item--nav {
-    padding-inline-start: 10px;
-    padding-inline-end: 10px;
+         padding-inline-start: 10px;
+         padding-inline-end: 10px;
   }
   .v-list-item--density-compact {
-    min-height: 35px;
+         min-height: 35px;
   }
 
   .v-list-item--nav .v-list-item-title {
-    font-size: 16px;
+         font-size: 16px;
   }
 }
+
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  padding: 20px 8px 12px;
+  img {
+    width: 90px;
+  }
+}
+ 
+
+
+
+
+ 
+  .user-item {
+       display: flex;
+       flex-direction:row;
+      //  align-items: stretch;
+       text-align: center;
+    .v-list-item__content {
+       width: 100%;
+     
+    
+      .v-list-item-title {
+        margin-bottom: 5px;
+      }
+    }
+    
+    
+
+    .v-liist{
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    .v-list-item__prepend {
+      .v-avatar {
+        margin-inline-end: 0;
+        margin-bottom: 10px;
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+  
+  .v-list .v-list-item--nav:not(:only-child) {
+        margin-bottom: 8px;
+  }
+  .v-list-item--nav {
+         padding-inline-start: 10px;
+         padding-inline-end: 10px;
+  }
+  .v-list-item--density-compact {
+         min-height: 35px;
+  }
+
+  .v-list-item--nav .v-list-item-title {
+         font-size: 16px;
+  }
 
 
 
@@ -558,6 +623,7 @@ flex-direction: row;
     flex: 1;
     justify-content: center;
 }
+
 
 .btttn{
  

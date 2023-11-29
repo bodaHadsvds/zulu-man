@@ -123,7 +123,7 @@
               </template>
 
               <template v-slot:default="{ isActive }">
-                <v-card title=" send welcome email again">
+                <v-card  title=" send welcome email again">
                   <v-card-text>
                     
                     This will restrict this user from booking classes using the mobile application,
@@ -133,9 +133,23 @@
                   <v-card-actions>
                     <v-spacer></v-spacer>
 
-                    <v-btn text="yes" @click="alert()"></v-btn>
+                    <v-btn text="yes" @click="this.welcomemsg()"></v-btn>
                     <v-btn text="No" @click="isActive.value = false"></v-btn>
                   </v-card-actions>
+                  
+                  <v-alert   v-if="alertmessage"
+                    color="success"
+                    icon="$success"
+                    title="send welcome message successfully
+                    "
+                    
+                   
+                      transition="scale-transition"
+                    text="please check your E-mail"
+                    :value="alert"
+                    >
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                  </v-alert>
                 </v-card>
             
               </template>
@@ -146,16 +160,16 @@
       
     </v-container>
 
-    <v-alert
+    <!-- <v-alert
       color="success"
       icon="$success"
       title="send welcome message successfully
       "
-      v-if="alertmessage"
+      v-if="alertmessage "
         transition="scale-transition"
       text="please check your E-mail"
       :value="alert"
-      ></v-alert>
+      ></v-alert> -->
             <!-------------------------------------------------------------------------------------------->      
 
 
@@ -637,17 +651,21 @@ export default {
     
           this.message=res.data.message
           console.log( "data" ,res.data)
+                this.alertmessage=!this.alertmessage
         }
       
       })
     }, 
-     onClick() {
-            if (this.isOpen === true) {
-                this.isOpen = false
+     wlcm() {
+            if (this.welcomemsg()) {
+              this.alertmessage =!this.alertmessage
             } else {
-                this.isOpen = true
+              this.alertmessage= false
             }
           },
+
+
+
 
     convert() {
       axios({
@@ -663,7 +681,9 @@ export default {
       })
     },
     alert(){
-      this.alert =!this.alert
+
+
+      this.alertmessage =!this.alertmessage
     }
 
   },
@@ -679,14 +699,36 @@ export default {
       this.alert =newVal
       console.log( '1', oldval)
       console.log('2',newVal)
+     },
+
+     alertmessage(oldval,newVal){
+      this.alertmessage= newVal
+      console.log(newVal , "alertmessage")
      }
   },
 
   mounted() {
     this.loadMember();
-    this.welcomemsg();
     this.convert();
     this.changeUser();
   },
 };
 </script>
+<style>
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+</style>

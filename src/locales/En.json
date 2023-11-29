@@ -615,6 +615,7 @@
           "placeholder": "Enter debt value",
           "validation": "debt balance is required."
         }
+       
       },
       "my_profile": "my profile",
       "change_password": "change password",
